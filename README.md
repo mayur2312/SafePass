@@ -2,6 +2,23 @@
 
 SafePass is a terminal-based password manager built in Python. It uses AES encryption and master password protection.
 
+# 1. sudo apt update && sudo apt install git -y
+
+# 2. Clone the SafePass repository
+     git clone https://github.com/mayurbopche23/SafePass.git
+
+# 3. Navigate to the project folder
+    cd safepass
+
+# 4. (Optional) Set executable permissions for the main script
+    chmod +x password_manager.py
+
+# 5. Create a symbolic link to run the tool globally
+    sudo ln -s "$(pwd)/password_manager.py" /usr/local/bin/password_manager
+
+# 6. Run the tool
+    password_manager -h
+
 ## Features
 - Master password protection
 - Add, update, reveal, and delete passwords
