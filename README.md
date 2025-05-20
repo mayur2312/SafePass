@@ -11,31 +11,33 @@ SafePass is a terminal-based password manager built in Python. It uses AES encry
 ## Usage
 
 Run the script using:
+
+1. Display Help Menu:
+password_manager -h
 Master Password Commands
-1. Set Master Password:
+2. Set Master Password:
 password_manager set-master --master <your_master_password>
 Password Entry Management
-2. Add New Entry:
+3. Add New Entry:
 password_manager add --name <entry_name> --user <username> --password <password>
-3. List All Entries (Masked):
+4. List All Entries (Masked):
 password_manager list
-4. List All Entries (Unmasked):
+5. List All Entries (Unmasked):
 password_manager list-unmasked
-5. Reveal Specific Password:
+6. Reveal Specific Password:
 password_manager reveal --name <entry_name>
-6. Update Password:
+7. Update Password:
 password_manager update --name <entry_name> --password <new_password>
-7. Delete Password:
+8. Delete Password:
 password_manager delete --name <entry_name>
-Help Command
-8. Display Help Menu:
-password_manager -h
-Example Usage
-password_manager set-master --master "MySecretMaster123"
-password_manager add --name "Gmail" --user "me@gmail.com" --password "StrongP@ss!"
-SafePass Password Manager - Command Reference Sheet
-password_manager list
-password_manager list-unmasked
-password_manager reveal --name "Gmail"
-password_manager update --name "Gmail" --password "NewStrongP@ss!"
-password_manager delete --name "Gmail"
+
+
+Example Usage:
+1. Python3 password_manager set-master --master "MySecretMaster123"
+2. password_manager add --name "Gmail" --user "me@gmail.com" --password "StrongP@ss!"
+3. SafePass Password Manager - Command Reference Sheet
+4. password_manager list
+5. password_manager list-unmasked
+6. password_manager reveal --name "Gmail"
+7. password_manager update --name "Gmail" --password "NewStrongP@ss!"
+8. password_manager delete --name "Gmail"
