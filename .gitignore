@@ -1,0 +1,9 @@
+# Sensitive files to ignore
+key.key
+master.hash
+password_manager.db
+my_private_key.asc
+
+# OS and IDE files
+__pycache__/
+*.pyc
